@@ -1,0 +1,26 @@
+<project name="build" default="build" basedir=".">
+
+    <path id="classpath">
+        <fileset dir="lib/compile" includes="*.jar"/>
+    </path>
+
+    <target name="clean">
+        <delete dir="target"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="target/classes"/>
+        <javac srcdir="src" destdir="target/classes" includeantruntime="false" classpathref="classpath"/>
+    </target>
+
+    <target name="build" depends="compile">
+        <jar basedir="target/classes" jarfile="target/sas2mongo.jar">
+            <fileset dir="src/main/resources"/>
+            <zipgroupfileset dir="lib/compile"/>
+            <manifest>
+                <attribute name="Built-By" value="Xantorohara"/>
+                <attribute name="Main-Class" value="io.github.xantorohara.sas2mongo.Sas2Mongo"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
