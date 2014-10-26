@@ -1,0 +1,1 @@
+Sas-files from: http://www.principlesofeconometrics.com/sas.htm
