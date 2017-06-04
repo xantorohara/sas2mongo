@@ -3,8 +3,9 @@ sas2mongo
 
 SAS file to MongoDB converter
 
+Download: [sas2mongo.jar] (https://github.com/xantorohara/sas2mongo/raw/master/target/sas2mongo.jar)
 
-usage: sas2mongo --file=FILE --collection=COLLECTION --mongo-db=DB
+Usage: java -jar sas2mongo.jar --file=FILE --collection=COLLECTION --mongo-db=DB
 ```
  -a,--action <arg>       What to do if the collection is not empty (append or drop)
  -d,--mongo-db <arg>     Mongo db
