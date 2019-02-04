@@ -3,7 +3,7 @@ sas2mongo
 
 SAS file to MongoDB converter
 
-Download: [sas2mongo.jar] (https://github.com/xantorohara/sas2mongo/raw/master/target/sas2mongo.jar)
+Download: [sas2mongo.jar](https://github.com/xantorohara/sas2mongo/raw/master/target/sas2mongo.jar)
 
 Usage: java -jar sas2mongo.jar --file=FILE --collection=COLLECTION --mongo-db=DB
 ```
